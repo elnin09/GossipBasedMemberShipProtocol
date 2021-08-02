@@ -2,7 +2,7 @@
  * FILE NAME: MP1Node.cpp
  *
  * DESCRIPTION: Membership protocol run by this Node.
- * 				Header file of MP1Node class.
+ * 		/Users/darmora/Desktop/UIUC/CS425/MP/MP1CS425/mp1/MP1Node.cpp		Header file of MP1Node class.
  **********************************/
 
 #ifndef _MP1NODE_H_
@@ -28,10 +28,12 @@
 /**
  * Message Types
  */
-enum MsgTypes{
-    JOINREQ,
-    JOINREP,
-    DUMMYLASTMSGTYPE
+enum MsgTypes
+{
+	JOINREQ,
+	JOINREP,
+	HEARTBEAT,
+	DUMMYLASTMSGTYPE
 };
 
 /**
@@ -39,16 +41,18 @@ enum MsgTypes{
  *
  * DESCRIPTION: Header and content of a message
  */
-typedef struct MessageHdr {
+typedef struct MessageHdr
+{
 	enum MsgTypes msgType;
-}MessageHdr;
+} MessageHdr;
 
 /**
  * CLASS NAME: MP1Node
  *
  * DESCRIPTION: Class implementing Membership protocol functionalities for failure detection
  */
-class MP1Node {
+class MP1Node
+{
 private:
 	EmulNet *emulNet;
 	Log *log;
@@ -58,7 +62,8 @@ private:
 
 public:
 	MP1Node(Member *, Params *, EmulNet *, Log *, Address *);
-	Member * getMemberNode() {
+	Member *getMemberNode()
+	{
 		return memberNode;
 	}
 	int recvLoop();
