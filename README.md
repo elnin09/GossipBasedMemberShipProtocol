@@ -13,8 +13,8 @@ Implement a heartbeat(gossip) based membership protocol to detect every node joi
 * EmulNet (Emulated Network Layer)
 
 The protocol runs on P2P layer.
-*Each Node/Peer uses ENinit to initialise its own address
-*Each Node uses ENsend and ENrecv to send and receive messages.
+* Each Node/Peer uses ENinit to initialise its own address
+* Each Node uses ENsend and ENrecv to send and receive messages.
 
 These functions are provided so that later it can be mapped to implementation that uses TCP sockets.
 
