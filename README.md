@@ -2,7 +2,7 @@
 Implement a heartbeat(gossip) based membership protocol to detect every node join , failure and exist in a distributed system.
 
 **Goals of the protocol**
-* Satisify completeness all the time i.e. every non-faulty process detects every node joi,failure and leave.
+* Satisify completeness all the time i.e. every non-faulty process detects every node join,failure and leave.
 * Satisfy accuracy of failure detection when there are no message losses and message delays are small.
 * Satisfy completeness when there are message losses.
 * Optimal accuracy under message losses.
