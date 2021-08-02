@@ -1,5 +1,5 @@
 # Gossip Based Membership Protocol
-Implement a heartbeat(gossip) based membership protocol to detect every node join , failure and exist in a distributed system.
+Implement a heartbeat(gossip) based membership protocol to detect every node join , failure and exit in a distributed system.
 
 **Goals of the protocol**
 * Satisify completeness all the time i.e. every non-faulty process detects every node join,failure and leave.
